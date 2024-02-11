@@ -14,5 +14,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Testing/WilliamsonTapScene.unity
     guid: f3b65ed2850f7b24ba197707a3d647f0
+  - enabled: 1
+    path: Assets/Scenes/Testing/Animated Background.unity
+    guid: 9b63f5232a84b274590bf6975ab14ea0
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
