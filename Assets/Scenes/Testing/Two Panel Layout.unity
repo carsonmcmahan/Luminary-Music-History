@@ -852,7 +852,6 @@ GameObject:
   m_Component:
   - component: {fileID: 337816321}
   - component: {fileID: 337816323}
-  - component: {fileID: 337816322}
   m_Layer: 5
   m_Name: PoiOne
   m_TagString: Untagged
@@ -881,19 +880,6 @@ RectTransform:
   m_AnchoredPosition: {x: 5, y: -35}
   m_SizeDelta: {x: 75, y: 35}
   m_Pivot: {x: 0.5, y: 1}
---- !u!114 &337816322
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 337816320}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d367c0f9d55fb9488d4bbaf0e2ac5f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  panelNumber: 0
 --- !u!114 &337816323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -937,7 +923,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 497305303}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1466216566}
+        m_TargetAssemblyTypeName: PanelManager, Assembly-CSharp
+        m_MethodName: ButtonPressed
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &350429035
 GameObject:
   m_ObjectHideFlags: 0
@@ -1607,7 +1605,6 @@ GameObject:
   m_Component:
   - component: {fileID: 476573963}
   - component: {fileID: 476573964}
-  - component: {fileID: 476573965}
   m_Layer: 5
   m_Name: PoiThree
   m_TagString: Untagged
@@ -1679,20 +1676,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 456783314}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
---- !u!114 &476573965
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 476573962}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d367c0f9d55fb9488d4bbaf0e2ac5f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  panelNumber: 2
+      m_Calls:
+      - m_Target: {fileID: 1466216566}
+        m_TargetAssemblyTypeName: PanelManager, Assembly-CSharp
+        m_MethodName: ButtonPressed
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &497305301
 GameObject:
   m_ObjectHideFlags: 0
@@ -2295,7 +2291,6 @@ GameObject:
   m_Component:
   - component: {fileID: 653287637}
   - component: {fileID: 653287638}
-  - component: {fileID: 653287639}
   m_Layer: 5
   m_Name: PoiTwo
   m_TagString: Untagged
@@ -2367,20 +2362,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 940131125}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
---- !u!114 &653287639
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 653287636}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d367c0f9d55fb9488d4bbaf0e2ac5f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  panelNumber: 1
+      m_Calls:
+      - m_Target: {fileID: 1466216566}
+        m_TargetAssemblyTypeName: PanelManager, Assembly-CSharp
+        m_MethodName: ButtonPressed
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &661489864
 GameObject:
   m_ObjectHideFlags: 0
@@ -3228,7 +3222,6 @@ GameObject:
   m_Component:
   - component: {fileID: 822116684}
   - component: {fileID: 822116685}
-  - component: {fileID: 822116686}
   m_Layer: 5
   m_Name: PoiEight
   m_TagString: Untagged
@@ -3300,20 +3293,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 981355796}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
---- !u!114 &822116686
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 822116683}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d367c0f9d55fb9488d4bbaf0e2ac5f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  panelNumber: 7
+      m_Calls:
+      - m_Target: {fileID: 1466216566}
+        m_TargetAssemblyTypeName: PanelManager, Assembly-CSharp
+        m_MethodName: ButtonPressed
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 7
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &824085976
 GameObject:
   m_ObjectHideFlags: 0
@@ -5414,7 +5406,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1271853954}
   - component: {fileID: 1271853955}
-  - component: {fileID: 1271853956}
   m_Layer: 5
   m_Name: PoiSeven
   m_TagString: Untagged
@@ -5486,20 +5477,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 553422584}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
---- !u!114 &1271853956
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1271853953}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d367c0f9d55fb9488d4bbaf0e2ac5f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  panelNumber: 6
+      m_Calls:
+      - m_Target: {fileID: 1466216566}
+        m_TargetAssemblyTypeName: PanelManager, Assembly-CSharp
+        m_MethodName: ButtonPressed
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 6
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1320266383
 GameObject:
   m_ObjectHideFlags: 0
@@ -5510,7 +5500,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1320266384}
   - component: {fileID: 1320266385}
-  - component: {fileID: 1320266386}
   m_Layer: 5
   m_Name: PoiFour
   m_TagString: Untagged
@@ -5582,20 +5571,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1974524032}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
---- !u!114 &1320266386
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1320266383}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d367c0f9d55fb9488d4bbaf0e2ac5f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  panelNumber: 3
+      m_Calls:
+      - m_Target: {fileID: 1466216566}
+        m_TargetAssemblyTypeName: PanelManager, Assembly-CSharp
+        m_MethodName: ButtonPressed
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1346664729
 GameObject:
   m_ObjectHideFlags: 0
@@ -6277,6 +6265,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1466216565}
+  - component: {fileID: 1466216566}
   m_Layer: 5
   m_Name: TwoPanelLayout
   m_TagString: Untagged
@@ -6304,6 +6293,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0, y: 0.5}
+--- !u!114 &1466216566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1466216564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d367c0f9d55fb9488d4bbaf0e2ac5f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panels: {fileID: 1441667280}
 --- !u!1 &1472568149
 GameObject:
   m_ObjectHideFlags: 0
@@ -6711,7 +6713,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1731856563}
   - component: {fileID: 1731856564}
-  - component: {fileID: 1731856565}
   m_Layer: 5
   m_Name: PoiSix
   m_TagString: Untagged
@@ -6783,20 +6784,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 574964272}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
---- !u!114 &1731856565
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1731856562}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d367c0f9d55fb9488d4bbaf0e2ac5f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  panelNumber: 5
+      m_Calls:
+      - m_Target: {fileID: 1466216566}
+        m_TargetAssemblyTypeName: PanelManager, Assembly-CSharp
+        m_MethodName: ButtonPressed
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1738903815
 GameObject:
   m_ObjectHideFlags: 0
@@ -6883,7 +6883,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1764213204}
   - component: {fileID: 1764213205}
-  - component: {fileID: 1764213206}
   m_Layer: 5
   m_Name: PoiFive
   m_TagString: Untagged
@@ -6955,20 +6954,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1855393630}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
---- !u!114 &1764213206
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1764213203}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d367c0f9d55fb9488d4bbaf0e2ac5f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  panelNumber: 4
+      m_Calls:
+      - m_Target: {fileID: 1466216566}
+        m_TargetAssemblyTypeName: PanelManager, Assembly-CSharp
+        m_MethodName: ButtonPressed
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1773337734
 GameObject:
   m_ObjectHideFlags: 0

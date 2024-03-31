@@ -1,22 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-[RequireComponent(typeof(Button))]
-public class OpenPanel : MonoBehaviour
+public class PanelManager : MonoBehaviour
 {
-    [Tooltip("Number Panel we want to activate.")]
-    [SerializeField] private int panelNumber;
-
-    Button button;
-
-    Transform panels;
+    [Tooltip("Transform containing all of the panels a UI wants to use.")]
+    [SerializeField] private Transform panels;
     List<Transform> panelsList;
 
     private void Awake()
     {
-        button = GetComponent<Button>();
         panelsList = new List<Transform>();
     }
 
@@ -31,17 +24,11 @@ public class OpenPanel : MonoBehaviour
         }
     }
 
-    private void OnEnable()
-    {
-        button.onClick.AddListener(() => ButtonPressed());
-    }
-
-    private void OnDisable()
-    {
-        button.onClick.RemoveAllListeners();
-    }
-
-    private void ButtonPressed()
+    /// <summary>
+    /// Takes a panel number and sets the panel to true if it is within the count.
+    /// </summary>
+    /// <param name="panelNumber">Index for the panel list.</param>
+    public void ButtonPressed(int panelNumber)
     {
         SetGameObjectsInactive();
 
@@ -51,6 +38,10 @@ public class OpenPanel : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Takes all of the items in the panel list and sets them to false.
+    /// </summary>
+    /// <returns>Returns the panel list.</returns>
     private List<Transform> SetGameObjectsInactive()
     {
         for (int i = 0; i < panelsList.Count; i++)
