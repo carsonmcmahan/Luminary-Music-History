@@ -15,8 +15,6 @@ public class PanelManager : MonoBehaviour
 
     private void Start()
     {
-        panels = GameObject.Find("Panels").transform;
-
         foreach (Transform panelTransform in panels)
         {
             panelsList.Add(panelTransform);
